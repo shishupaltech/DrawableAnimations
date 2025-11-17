@@ -23,10 +23,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageView imageView = findViewById(R.id.imageView2);
+        ImageView imageView = findViewById(R.id.imageView3);
         imageView.setBackgroundResource(R.drawable.bird_animation);
-        AnimationDrawable anim = (AnimationDrawable) imageView.getBackground();
-        anim.start();
+        AnimationDrawable animateDrawable = (AnimationDrawable) imageView.getBackground();
+        animateDrawable.start();
+
 
     }
 }
